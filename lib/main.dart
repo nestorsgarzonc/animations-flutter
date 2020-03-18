@@ -1,4 +1,3 @@
-import 'package:animations/scr/pages/navigation_page.dart';
 import 'package:animations/scr/pages/page1.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Animations App',
       debugShowCheckedModeBanner: false,
-      home: NavigationPage(),
+      home: Page1(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:animations/scr/pages/navigation_page.dart';
 import 'package:animations/scr/pages/twitter_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -76,8 +77,13 @@ class Page1 extends StatelessWidget {
       floatingActionButton: ElasticIn(
         delay: Duration(milliseconds: 1000),
         child: FloatingActionButton(
-          onPressed: () {},
           child: FaIcon(FontAwesomeIcons.play),
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => NavigationPage()));
+          },
         ),
       ),
     );
